@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stickman Rugby</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      max-width: 900px;
+      width: 90%;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00c896;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .description p {
+      margin: 15px 0;
+      line-height: 1.8;
+      font-size: 1rem;
+      color: #eee;
+    }
+
+    .download-buttons {
+      margin-top: 40px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .android {
+      background-color: #3ddc84;
+    }
+
+    .android:hover {
+      background-color: #34c374;
+    }
+
+    .ios {
+      background-color: #007aff;
+    }
+
+    .ios:hover {
+      background-color: #0061cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/icon.png" alt="Stickman Rugby Icon" class="icon" />
+      <h1>Stickman Rugby</h1>
+      <p class="tagline">Multiplayer, fast-paced rugby action in a stickman world!</p>
+    </header>
+
+    <section class="description">
+      <p>
+        Step onto the pitch and experience the intensity of <strong>Stickman Rugby</strong> – the ultimate multiplayer casual game that brings the thrill of rugby into a unique, stick-figure universe. Join thousands of players from around the globe in fast-paced, adrenaline-fueled matches where every pass, tackle, and try creates moments of unforgettable excitement.
+      </p>
+      <p>
+        Choose your stickman avatar and personalize your look with an extensive collection of skins and accessories. Unlock exclusive upgrades that not only enhance your appearance but provide unique advantages.
+      </p>
+      <p>
+        Compete in real-time matches across various modes – from quick action to tournaments and daily challenges. Every arena delivers a fresh experience.
+      </p>
+      <p>
+        Stickman Rugby is more than a game – it’s a community. Chat, form teams, and rise through the leaderboards with regular updates and new challenges.
+      </p>
+      <p>
+        Enjoy fluid animations, charming cartoon graphics, and immersive sound effects. Dive in and experience teamwork, strategy, and nonstop action. Welcome to Stickman Rugby!
+      </p>
+    </section>
+
+    <div class="download-buttons">
+      <a href="stickman-rugby.apk" class="download-btn android" download>Download for Android</a>
+      <a href="#" class="download-btn ios" onclick="alert('iOS version coming soon!')">Download for iOS</a>
+    </div>
+  </div>
+</body>
+</html>
