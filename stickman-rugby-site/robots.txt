@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://stickman-rugby.onrender.com/sitemap.xml
